@@ -1,5 +1,7 @@
 ###############################################################################
-# TODO: 1. (5 pts)
+# Done: 1. (5 pts)
+usrnme = input ("Hi, What's your name?") 
+print (f"Nice to meet you, {usrnme}")
 #   Immediately below this _TODO_, write code that:
 #     - Asks the user what their name is
 #     - Waits for the user to input their name and hit enter
@@ -29,7 +31,10 @@
 ###############################################################################
 
 ###############################################################################
-# TODO: 2. (5 pt)
+# DONE: 2. (5 pt)
+favnumber = input ("what is your favorite number between 1 and 4?")
+print (f"{usrnme}, your favorit number is {favnumber}! how excellent" )
+
 #   Now you might be thinking, why didn't we just use concatenation to do this?
 #   Isn't it just the same thing?
 #
@@ -72,3 +77,103 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+txt = "The quick brown fox jumps over the lazy dog."
+Upper = txt.upper()
+Lower = txt.lower()
+print (Upper)
+print (Lower)
+###############################################################################
+# Done: 1. (1 pt)
+#   For the following exercises, you may need to reference the material on 
+#   string methods.
+#
+#   And again, you will reference the string at the top of this file.
+#
+#   Immediately below this _TODO_, write code that:
+#     1. Modifies the string to be in all upper case letters, saves it to a 
+#        variable called   upper   and prints its value.
+#     2. Modifies the string again to be in all lower case letters, saves it to
+#        a variable called   lower   and prints its vale.
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+###############################################################################
+
+###############################################################################
+# done: 2. (1 pt)
+txt = "The quick brown fox jumps over the lazy dog."
+newcolor = "green" 
+newsent = txt.replace ("brown",newcolor)
+print (newsent)
+#   Immediately below this _TODO_, write code that:
+#     - Replaces the word 'brown' with a different color of your choosing.
+#     - Saves the result to a variable name
+#     - Prints the value of the variable
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+###############################################################################
+
+###############################################################################
+# done: 3. (2 pts)
+num3 = newsent.title()
+print (num3)
+#   Immediately below this _TODO_, write code that:
+#     - Capitalizes the first letter of each word in the string (HINT: look
+#       through the methods resource in the pre-class materials that might be
+#       helpful)
+#     - Saves the result to a variable name
+#     - Prints the value of the variable
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+##########################################################################
+txt = "  The quick brown fox jumps over the lazy dog.  "
+txt = txt.strip()
+print ("txt after removing spaces:", txt)
+###############################################################################
+# DONE 1. (1 pt)
+#   Notice the string   txt   that I have defined above. First, let's clear up
+#   those extra spaces.
+#
+#   Immediately below this _TODO_, write code that:
+#       Reassigns the value of the variable   txt   to a version of the same
+#       string but with the spaces at the beginning and at the end removed.
+#       Use a method to do this for you and don't simply copy and paste the
+#       string but without the spaces.
+#       (HINT: the method that you need was in your pre-class materials)
+#   
+#   We will be using the updated string (which should still be called   txt   )
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+###############################################################################
+
+###############################################################################
+# DONE: 2. (1 pt)
+
+#   From now on, do not reassign the variable   txt   . You will be using it as
+#   your starter string for the rest of these exercises.
+#
+#   Immediately below this _TODO_, write code that:
+#     - Gets the word 'quick' from the starter string (do NOT just type the
+#        word 'quick')
+#     - Assigns that value to a variable of your choosing (not txt)
+#     - Prints the value of that variable
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+###############################################################################
+words = txt.split()
+word_quick = words[1]
+print (word_quick)
+###############################################################################
+# DONE: 3. (1 pt)
+#   Let's add another sentence to our string.
+sentence2 = "but the lazy dog is quicker than the fox"
+print (txt + sentence2)
+#   Immediately below this _TODO_, write code that:
+#     - Assigns another sentence to a variable name (you choose the name and 
+#       sentence)
+#     - Combines the starter string with your new sentence. Remember to include
+#       a space between your sentences (so you have three things to put
+#       together: the starter string, a space, and your new sentence).
+#     - Prints the result
+#
+#   Once you have done this, then change the above _TODO_ to DONE.
+########################################################################

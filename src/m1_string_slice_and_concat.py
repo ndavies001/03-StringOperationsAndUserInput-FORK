@@ -1,7 +1,8 @@
 txt = "  The quick brown fox jumps over the lazy dog.  "
-
+txt = txt.strip()
+print ("txt after removing spaces:", txt)
 ###############################################################################
-# TODO: 1. (1 pt)
+# DONE 1. (1 pt)
 #   Notice the string   txt   that I have defined above. First, let's clear up
 #   those extra spaces.
 #
@@ -18,7 +19,8 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 ###############################################################################
 
 ###############################################################################
-# TODO: 2. (1 pt)
+# DONE: 2. (1 pt)
+
 #   From now on, do not reassign the variable   txt   . You will be using it as
 #   your starter string for the rest of these exercises.
 #
@@ -30,11 +32,14 @@ txt = "  The quick brown fox jumps over the lazy dog.  "
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+words = txt.split()
+word_quick = words[1]
+print (word_quick)
 ###############################################################################
-# TODO: 3. (1 pt)
+# DONE: 3. (1 pt)
 #   Let's add another sentence to our string.
-#
+sentence2 = "but the lazy dog is quicker than the fox"
+print (txt + sentence2)
 #   Immediately below this _TODO_, write code that:
 #     - Assigns another sentence to a variable name (you choose the name and 
 #       sentence)
